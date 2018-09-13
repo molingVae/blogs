@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upower博客</title>
+    <link rel="icon" type="image/x-icon" href="images/无穷大.png" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/util.css" rel="stylesheet">
+    <link href="css/image.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/APlayer.min.css">
+    <style>
+        body {
+            padding-top: 60px;
+            color: #5a5a5a;
+            margin: 0px;
+            background-color: rgb(248, 236, 195);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--顶部导航-->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Upower博客</a>
+            </div>
+            <div class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">
+                            <span class="glyphicon glyphicon-home"></span>&nbsp&nbsp网站首页</a>
+                    </li>
+                    <li>
+                        <a href="reading.html">
+                            <span class="glyphicon glyphicon-education"></span>&nbsp&nbsp文字专栏</a>
+                    </li>
+                    <li>
+                        <a class="music">
+                            <span class="glyphicon glyphicon-music"></span>&nbsp&nbsp音乐专栏</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp杂七杂八</a>
+                    </li>
+                    <li>
+                        <a href="timeLine.html">
+                            <span class="glyphicon glyphicon-hourglass"></span>&nbsp&nbsp点点滴滴</a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <span class="glyphicon glyphicon-pawn"></span>&nbsp&nbsp关于本站</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                        <a href="#">
+                            <img src="images/icon_QQ.png" class="img-circle img1">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--主体内容-->
+    <div class="container summary">
+        <div id="player1" class="aplayer">
+        </div>
+        <!--公告-->
+        <div class="thumbnail" style="border-left-color:coral;border-left-width: 4px">
+            <p class="text-success">
+                <a class="btn">网站首页</a>>>杂七杂八
+            </p>
+
+        </div>
+        <!--内容-->
+        <div class="thumbnail ">
+            <!-- Nav tabs -->
+            <div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">照片墙</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">其他作品</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">天马行空</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content imgs">
+                    <div role="tabpanel" class="tab-pane fade in active" id="home">
+                        <div id="featured-area">
+                            <ul>
+                                <li>
+                                    <img src="images/1529297894900.jpeg" />
+                                </li>
+                                <li>
+                                    <img src="images/7.jpg">
+                                </li>
+                                <li>
+                                    <img src="images/1532142077523.jpeg" />
+                                </li>
+                                <li>
+                                    <img src="images/img-b7b585fd1f7ff69df75293495437b6bd.jpg" />
+                                </li>
+                                <li>
+                                    <img src="images/fnfast.jpg" />
+                                </li>
+                                <li>
+                                    <img src="images/speedometer.jpg" />
+                                </li>
+                                <li>
+                                    <img src="images/photoshop_plus.jpg" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="profile">...</div>
+                    <div role="tabpanel" class="tab-pane fade" id="messages">...</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="#top" id="toTop" style="position: fixed;display: none;bottom: 100px;right: 30px;">
+                <img src="images/top.png" class="img-circle" style="width: 30px;height: 30px;">
+            </a>
+        </div>
+
+
+    </div>
+
+    <footer class="col-md-12 container text-center">
+        <hr>
+        <div>
+            <p> Copyright © 2018
+                <a class="btn" href="index.html">沫凌博客</a> By沫凌</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/APlayer.min.js"></script>
+    <script type="text/javascript" src="js/jquery.roundabout-1.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //初始化相册
+            $('#featured-area ul').roundabout({
+                easing: 'easeOutInCirc',
+                duration: 600
+            });
+            //初始化音乐播放器
+            const ap = new APlayer({
+                container: document.getElementById('player1'),
+                autoplay: true,
+                volume: 0.3,
+                listFolded: true,
+                listMaxHeight: 90,
+                lrcType: 3,
+                fixed: true,
+                audio: [{
+                    name: '惊鸿一面',
+                    artist: '许嵩',
+                    url: 'http://music.163.com/song/media/outer/url?id=28854182.mp3',
+                    cover: 'http://p1.music.126.net/WoR2LbM1IFauFpvhBWOjqA==/6642149743396577.jpg?param=300x300',
+                    lrc: 'lrc/jinghong.lrc',
+                }, {
+                    name: '如约而至',
+                    artist: '许嵩',
+                    url: 'http://music.163.com/song/media/outer/url?id=573384240.mp3',
+                    cover: 'http://p1.music.126.net/BUFZLieG5a6E3ZVpkHP6fA==/109951163402069754.jpg?param=300x300',
+                    lrc: 'lrc/ruyue.lrc',
+                }]
+            });
+
+        });
+    </script>
+</body>
+
+</html>

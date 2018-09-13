@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/util.css" rel="stylesheet">
+    <style>
+        .nav-stacked {
+            position: fixed;
+            width: 191px;
+        }
+
+        .nav-stacked a {
+            color: #5a5a5a;
+        }
+    </style>
+</head>
+
+<body>
+    <!--导航-->
+    <!--顶部导航-->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Upower博客</a>
+            </div>
+            <div class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">
+                            <span class="glyphicon glyphicon-home"></span>&nbsp&nbsp网站首页</a>
+                    </li>
+                    <li>
+                        <a href="reading.html">
+                            <span class="glyphicon glyphicon-education"></span>&nbsp&nbsp文字专栏</a>
+                    </li>
+                    <li>
+                        <a class="music">
+                            <span class="glyphicon glyphicon-music"></span>&nbsp&nbsp音乐专栏</a>
+                    </li>
+
+                    <li>
+                        <a href="cluster.html">
+                            <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp杂七杂八</a>
+                    </li>
+                    <li>
+                        <a href="timeLine.html">
+                            <span class="glyphicon glyphicon-hourglass"></span>&nbsp&nbsp点点滴滴</a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <span class="glyphicon glyphicon-pawn"></span>&nbsp&nbsp关于本站</a>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">
+                            <img src="images/null-404eb63414e58831.jpg" class="img-circle img1">&nbsp沫凌
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                           <span class="glyphicon glyphicon-off"></span> 退出
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--左部导航-->
+    <div class="container-fluid ">
+        <ul id="main-nav" class="nav nav-tabs nav-stacked  " style="margin-top: 0px" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#01" aria-controls="01" role="tab" data-toggle="tab">
+                    <span class="glyphicon glyphicon-th-large"></span>
+                    首页
+                </a>
+            </li>
+            <li>
+                <a href="#systemSetting" class="nav-header collapsed" data-toggle="collapse">
+                    <sapn class="glyphicon glyphicon-cog"></sapn>
+                    系统管理
+                    <span class="pull-right glyphicon glyphicon-chevron-down"></span>
+                </a>
+                <ul id="systemSetting" class="nav nav-list collapse secondmenu" style="height: 0px;">
+                    <li role="presentation">
+                        <a href="#03" aria-controls="03" role="tab" data-toggle="tab">
+                            <sapn class="glyphicon glyphicon-user"></sapn>用户管理</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#03" aria-controls="03" role="tab" data-toggle="tab">
+                            <sapn class="glyphicon glyphicon-th-list"></sapn>菜单管理</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#03" aria-controls="03" role="tab" data-toggle="tab">
+                            <sapn class="glyphicon glyphicon-asterisk"></sapn>角色管理</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#03" aria-controls="03" role="tab" data-toggle="tab">
+                            <sapn class="glyphicon glyphicon-edit"></sapn>修改密码</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#03" aria-controls="03" role="tab" data-toggle="tab">
+                            <sapn class="glyphicon glyphicon-eye-open"></sapn>日志查看</a>
+                    </li>
+                </ul>
+            </li>
+            <li role="presentation">
+                <a href="#02" aria-controls="02" role="tab" data-toggle="tab">
+                    <sapn class="glyphicon glyphicon-credit-card"></sapn>
+                    物料管理
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#03" aria-controls="03" role="tab" data-toggle="tab">
+                    <span class="glyphicon glyphicon-globe"></span>
+                    分发配置
+                    <span class="label label-warning pull-right">5</span>
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#04" aria-controls="04" role="tab" data-toggle="tab">
+                    <sapn class="glyphicon glyphicon-calendar"></sapn>
+                    图表统计
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#05" aria-controls="05" role="tab" data-toggle="tab">
+                    <i class="glyphicon glyphicon-fire"></i>
+                    关于系统
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content" style="margin-left: 200px">
+            <div role="tabpanel" class="tab-pane fade in active" id="01">01</div>
+            <div role="tabpanel" class="tab-pane fade" id="02">02</div>
+            <div role="tabpanel" class="tab-pane  fade" id="03">03</div>
+            <div role="tabpanel" class="tab-pane  fade" id="04">04</div>
+            <div role="tabpanel" class="tab-pane  fade" id="05">05</div>
+        </div>
+    </div>
+
+  
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+</body>
+
+</html>
